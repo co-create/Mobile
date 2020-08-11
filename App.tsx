@@ -58,7 +58,7 @@ export default class App extends React.Component {
 
 	computeColor():string {
 		let maxDistance: number = this.state.maxDistance;
-		let distance: number = this.state.distance;
+		let distance: number = this.computeDistance();
 
 		if (distance <= 0.05 * maxDistance) {
 			return "red";
